@@ -1,0 +1,82 @@
+.filters {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.filter-item {
+  min-width: 180px;
+  flex: 1;
+}
+
+.suggestions-box {
+  position: absolute;
+  background: white;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  z-index: 1000;
+  margin-top: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background: #f3f4f6;
+}
+
+body.dark-mode .filters {
+  background: #1e293b;
+}
+
+body.dark-mode .suggestions-box {
+  background: #1e293b;
+  color: white;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+}
+
+.hero-section {
+  height: 280px;
+  background: url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30")
+    center/cover no-repeat;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+}

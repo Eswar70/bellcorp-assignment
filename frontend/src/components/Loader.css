@@ -1,0 +1,19 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.squid-loader {
+  width: 80px;
+  height: 80px;
+  border: 8px solid #e11d48;
+  border-top: 8px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  box-shadow: 0 0 20px #e11d48;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

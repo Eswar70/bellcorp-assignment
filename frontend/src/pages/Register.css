@@ -1,0 +1,34 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 320px;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 6px 20px rgba(41,128,185,0.12);
+  border: 1px solid var(--primary);
+}
+
+button {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
